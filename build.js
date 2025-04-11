@@ -1,5 +1,4 @@
 const { build } = require("esbuild");
-const cp = require("child_process");
 const fs = require("fs");
 const path = require("path");
 
@@ -9,10 +8,8 @@ const path = require("path");
     entryPoints: ["src/index.ts"],
     bundle: true,
     outfile: "dist/index.js",
+    sourcemap: "external",
     minify: true,
-    external: [
-      "electron",
-    ],
     platform: "node",
   });
   console.timeEnd("Build time");
