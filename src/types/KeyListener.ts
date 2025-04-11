@@ -3,6 +3,7 @@ import cp from "child_process";
 import process from "process";
 import path from "path";
 import JSONStream from "json-stream";
+import { modulePath } from "..";
 
 export type KeyListenerType = "DIRECT" | "COMPLEX" | "HOLD_AND_RELEASE" | "MOUSE";
 
@@ -88,7 +89,7 @@ export class KeyListener<T extends KeyListenerType> extends EventEmitter {
     this.started = true;
 
     this.process = cp.spawn(
-      path.resolve(__dirname, process.platform === "win32" ? "./key-listener.exe" : "./key-listener"),
+      path.resolve(modulePath, process.platform === "win32" ? "./key-listener.exe" : "./key-listener"),
       [this.type],
       {
         shell: true
