@@ -120,5 +120,3 @@ export class KeyListener<T extends KeyListenerType> extends EventEmitter {
     return true;
   }
 }
-
-const l = new KeyListener("MOUSE");
