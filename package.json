@@ -4,7 +4,8 @@
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "build": "node build.js",
+    "tsc": "tsc",
+    "build": "node ./build.js",
     "start": "electron dist/index.js"
   },
   "keywords": [],
@@ -15,8 +16,7 @@
   "packageManager": "pnpm@10.7.1",
   "devDependencies": {
     "@types/json-stream": "^1.0.3",
-    "@types/node": "^22.14.0",
-    "esbuild": "^0.25.2"
+    "@types/node": "^22.14.0"
   },
   "dependencies": {
     "json-stream": "^1.0.0",
