@@ -28,13 +28,19 @@ export type EventTypes = {
   },
   ["MOUSE"]: ({
     event_type: "move";
+    x: number;
+    y: number;
   } | {
     button: string;
     pressed: boolean;
     event_type: "button";
-  }) & {
     x: number;
     y: number;
+  } | {
+    event_type: "scroll";
+    delta_x: number;
+    delta_y: number;
+  }) & {
     timestamp: number;
   }
 }
@@ -53,6 +59,7 @@ export type EventTypeToDataMap = {
   // Mouse event types
   "move": Extract<EventTypes["MOUSE"], { event_type: "move" }>;
   "button": Extract<EventTypes["MOUSE"], { event_type: "button" }>;
+  "scroll": Extract<EventTypes["MOUSE"], { event_type: "scroll" }>;
 }
 
 export type KeyListenerEventTypes = {

@@ -78,12 +78,12 @@ class MouseSimulator {
     if (duration) await new Promise((r) => setTimeout(r, duration));
   }
 
-  async scroll(x: number, y: number, duration: number = 100, ease: MouseMoveEase = "linear") {
+  async scroll(deltaX: number, deltaY: number, duration: number = 100, ease: MouseMoveEase = "linear") {
     this.simulator.send({
       event_type: "mouse",
       action: "scroll",
-      x,
-      y,
+      delta_x: deltaX,
+      delta_y: deltaY,
       duration_ms: duration,
       ease
     });
@@ -95,11 +95,11 @@ class KeyboardSimulator {
   constructor(private simulator: InputSimulator) { }
 
   press(key: string) {
-    this.simulator.send({ event_type: "keyboard", action: "press", key });
+    this.simulator.send({ event_type: "key", action: "press", key });
   }
 
   release(key: string) {
-    this.simulator.send({ event_type: "keyboard", action: "release", key });
+    this.simulator.send({ event_type: "key", action: "release", key });
   }
 
   tap(key: string) {
