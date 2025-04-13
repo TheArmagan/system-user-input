@@ -2,6 +2,7 @@ const fs = require("fs");
 const cp = require("child_process");
 const path = require("path");
 
+if (fs.existsSync("./dist")) fs.rmSync("./dist", { recursive: true, force: true });
 console.time("Build time");
 cp.execSync("pnpm run tsc", { stdio: "inherit" });
 console.timeEnd("Build time");
