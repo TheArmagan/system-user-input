@@ -25,7 +25,8 @@
     "events",
     "keyboard",
     "mouse",
-    "hooks"
+    "hooks",
+    "system-user-input"
   ],
   "author": {
     "name": "Kıraç Armağan Önal & Erdem Göksel"
