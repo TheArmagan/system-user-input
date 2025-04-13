@@ -1,14 +1,32 @@
 {
   "name": "system-user-input",
   "version": "0.0.1",
-  "description": "",
+  "description": "A Node.js library for capturing user input events at the system level.",
   "main": "dist/index.js",
   "scripts": {
     "tsc": "tsc",
     "build": "node ./build.js",
     "start": "electron dist/index.js"
   },
-  "keywords": [],
+  "keywords": [
+    "system",
+    "user",
+    "input",
+    "electron",
+    "typescript",
+    "JSON",
+    "stream",
+    "gui",
+    "interface",
+    "desktop",
+    "application",
+    "global",
+    "user input",
+    "events",
+    "keyboard",
+    "mouse",
+    "hooks"
+  ],
   "author": {
     "name": "Kıraç Armağan Önal & Erdem Göksel"
   },
