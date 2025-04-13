@@ -1,6 +1,6 @@
 # ✨ System User Input ✨
 
-A **robust** Node.js library for capturing system-wide user input events like a pro! 🚀
+A **robust** Node.js library for capturing and simulating system-wide user input events like a pro! 🚀
 
 ## 💡 Introduction
 

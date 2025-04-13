@@ -1,7 +1,7 @@
 {
   "name": "system-user-input",
-  "version": "0.0.2",
-  "description": "A robust Node.js library for capturing system-wide user input events like a pro! 🚀",
+  "version": "0.0.3",
+  "description": "A robust Node.js library for capturing and simulating system-wide user input events like a pro! 🚀",
   "main": "dist/index.js",
   "scripts": {
     "tsc": "tsc",
@@ -26,7 +26,18 @@
     "keyboard",
     "mouse",
     "hooks",
-    "system-user-input"
+    "system-user-input",
+    "simulation",
+    "event",
+    "event-emitter",
+    "event-stream",
+    "emulation",
+    "input-emulation",
+    "input-simulation",
+    "input-events",
+    "input-capture",
+    "input-listener",
+    "input-handler"
   ],
   "author": {
     "name": "Kıraç Armağan Önal & Erdem Göksel"
