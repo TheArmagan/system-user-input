@@ -6,3 +6,4 @@ export * from "./types/DirectKeyListener";
 export * from "./types/HoldAndReleaseListener";
 export * from "./types/ComplexKeyListener";
 export * from "./types/MouseListener";
+export * from "./types/InputSimulator";

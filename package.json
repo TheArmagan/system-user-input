@@ -1,7 +1,7 @@
 {
   "name": "system-user-input",
-  "version": "0.0.1",
-  "description": "A Node.js library for capturing user input events at the system level.",
+  "version": "0.0.2",
+  "description": "A robust Node.js library for capturing system-wide user input events like a pro! 🚀",
   "main": "dist/index.js",
   "scripts": {
     "tsc": "tsc",
